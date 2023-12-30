@@ -1,0 +1,36 @@
+name: game_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  http: ^1.1.2
+  flutter_secure_storage: ^9.0.0
+  flutter_riverpod: ^2.4.9
+  fade_shimmer: ^2.2.0
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  dio: ^5.4.0
+  modal_bottom_sheet: ^3.0.0-pre 
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
