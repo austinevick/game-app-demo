@@ -1,4 +1,5 @@
 const baseUrl = 'https://millonaire.org/api/';
+//const baseUrl = 'https://millionairepowerplay.com/api/';
 
 const noConnection = 'No Internet Connection';
 const somethingwentwrong = 'Something went wrong';

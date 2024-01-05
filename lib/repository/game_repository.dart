@@ -70,8 +70,7 @@ class GameRepository {
     final response =
         await DioClient.postRequest("${baseUrl}vendor/add_booking", model);
     final responseModel = addBookingResponseModelFromJson(response.toString());
-    print(response);
-    print(responseModel.data);
+
     return responseModel;
   }
 }

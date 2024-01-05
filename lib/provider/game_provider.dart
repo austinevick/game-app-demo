@@ -62,7 +62,7 @@ class GameProvider extends ChangeNotifier {
       amount = gameList?[i].amount != ''
           ? (gameList?[i].amount ?? '')
           : (gameList?[i].minAmount ?? '');
-
+      print(gameList?[i].selectedNoOfTicket);
       ticketData.add(
         {
           'game_id': gameList?[i].id,
@@ -80,7 +80,6 @@ class GameProvider extends ChangeNotifier {
         username: usernameCtrl.text.trim(), password: passwordCtrl.text.trim());
     final response = await runcallWithDialog<LoginResponseModel>(
         ref.read(gameRepository).login(model));
-    print(response.status);
     if (response.status == 200) {
       StorageProvider.saveUserToken(response.data!.token!);
       StorageProvider.saveUserId(response.data!.id.toString());
